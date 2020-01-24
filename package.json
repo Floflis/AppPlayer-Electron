@@ -29,7 +29,8 @@
     "jquery": "^3.2.1"
   },
   "devDependencies": {
-    "electron": "6.0.9"
+    "electron": "6.0.9",
+    "sodium-native": "2.4.2"
   },
   "false": {}
 }

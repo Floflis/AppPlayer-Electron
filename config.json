@@ -1,0 +1,33 @@
+{
+  "window": {
+    "width": 800,
+    "height": 600,
+    "fullscreen": false,
+    "frame": true,
+    "transparent": false,
+    "toolbar": true,
+    "alwaysOnTop": false
+  },
+  "developer": {
+    "show_dev_tools": true
+  },
+  "project": {
+    "name": "My name"
+  },
+  "build": {
+    "/* Description */": "This part is required only if you build electron by yourself - Only modify if you know what you are doing",
+    "macos": false,
+    "macappstore": false,
+    "windows": true,
+    "linux": true,
+    "v32bit": true,
+    "v64bit": true,
+    "armv7": false,
+    "overwrite": true,
+    "asar": true,
+    "electronVersion": "latest",
+    "ouputPath": "",
+    "iconPath": "",
+    "ignore": ""
+  }
+}

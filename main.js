@@ -40,7 +40,7 @@ try {
 }
 
 function createWindow() {
-	mainWindow = new BrowserWindow({'web-preferences': {'plugins': true},
+	mainWindow = new BrowserWindow({'web-preferences': {'plugins': true, nodeIntegration: true},
 		width: (def ? 800 : config.window.width),
 		height: (def ? 600 : config.window.height),
 		frame: (def ? false : config.window.frame),

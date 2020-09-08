@@ -3,7 +3,6 @@ const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;app.commandLine.appendSwitch('--enable-experimental-web-platform-features');
 const fs = require("fs");
 const path = require("path");
-const jQuery = require("jquery");
 
 const isDev = require('electron-is-dev');
 
@@ -50,10 +49,13 @@ function createWindow() {
 		alwaysOnTop: (def ? false : config.window.alwaysOnTop),
 	});
 
-	if (args[1])
-		mainWindow.loadURL(`file://${__dirname}/index-preview.html`);
-	else
-		mainWindow.loadURL(`file://${__dirname}/www/index.html`);
+	if (process.argv) {
+		console.log('a')
+		mainWindow.loadURL(process.argv[1]);
+	}
+	else {
+		mainWindow.loadFile(`./www/index.html`);
+	}
 
 	if ((def ? false : config.developer.show_dev_tools))
 		mainWindow.webContents.openDevTools();

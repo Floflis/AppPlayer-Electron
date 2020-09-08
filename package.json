@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . myName"
+    "build": "electron-packager . myName --overwrite"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,5 @@
   },
   "devDependencies": {
     "electron": "6.0.9"
-  },
-  "false": {}
+  }
 }

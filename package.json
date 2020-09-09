@@ -1,6 +1,6 @@
 {
-  "name": "App Player Electron",
-  "version": "1.0.0",
+  "name": "AppPlayerElectron",
+  "version": "1.9.3",
   "description": "A minimal Electron application for Construct 2 exported games",
   "main": "main.js",
   "scripts": {

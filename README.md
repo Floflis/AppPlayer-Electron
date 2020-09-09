@@ -3,7 +3,7 @@ YOU MUST OWN A C2 LICENSE TO USE THIS TOOL. IT IS NOT ALLOWED TO EXPORT GAMES TO
 # Electron for Construct 2
 A prebuilt version of electron ready for Construct 2 games
 
-Latest : [1.7.4](https://github.com/Floflis/AppPlayer-Electron/releases/)
+Latest : [1.9.3](https://github.com/Floflis/AppPlayer-Electron/releases/)
 
 
 *See also : [Steam plugin for Electron (Work In Progress)](#)*
@@ -35,19 +35,23 @@ If you have any issue please ask [here](https://github.com/C2Electron/template/i
 
 To do a DIY of AppPlayer:
 
-1. clone this git repo
-2. inside it open the sorcery/terminal/command prompt
+1. clone this git repo;
+2. inside it open the sorcery/terminal/command prompt;
 3. Then type the following 2 commands:
+
+### 1:
 
 ```sh
 npm install
 ```
 
+### 2:
+
 ```sh
 npm run build
 ```
 
-Done! <3
+Done! ❤️
 
 ## FAQ
 > The page can't load, I have a blank page telling me that I am unathorized
@@ -56,4 +60,4 @@ Use **preview on LAN**. Localhost doesn't work.
 
 ## Credits
 
-Originally made by @Armaldio, became legacy, and then was rescued by @DaniellMesquita followed by its original developer, @Armaldio.
+Originally made by [@Armaldio](https://github.com/Armaldio), became legacy, and then was rescued by [@DaniellMesquita](https://github.com/DaniellMesquita) followed by its original developer, [@Armaldio](https://github.com/Armaldio).

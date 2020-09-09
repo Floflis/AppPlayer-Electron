@@ -3,7 +3,6 @@ const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;app.commandLine.appendSwitch('--enable-experimental-web-platform-features');
 const fs = require("fs");
 const path = require("path");
-const jQuery = require("jquery");
 
 const isDev = require('electron-is-dev');
 
@@ -28,32 +27,41 @@ app.commandLine.appendSwitch('enable-html5-camera');
 app.commandLine.appendSwitch('allow-file-access-from-files');
 app.commandLine.appendSwitch('disable-software-rasterizer');*/
 
-try {
-	fs.accessSync(path.join(__dirname, "config.json"), fs.F_OK);
-	config = JSON.parse(fs.readFileSync(path.join(__dirname, "config.json")));
+if (fs.existsSync(path.join(__dirname, "config.json"))) {
+	config = JSON.parse(fs.readFileSync(path.join(__dirname, "config.json"), 'utf-8'));
 
 	console.log(config);
 
 	def = false;
-} catch (e) {
+} else {
 	console.log("No configuration file, back to default settings");
 }
 
 function createWindow() {
-	mainWindow = new BrowserWindow({'web-preferences': {'plugins': true, nodeIntegration: true},
+	console.log('preload', path.join(__dirname, './preload.js'))
+	mainWindow = new BrowserWindow({
+		webPreferences: {
+			plugins: true,
+			nodeIntegration: true,
+			preload: path.join(__dirname, 'preload.js')
+		},
 		width: (def ? 800 : config.window.width),
 		height: (def ? 600 : config.window.height),
 		frame: (def ? false : config.window.frame),
 		fullscreen: (def ? false : config.window.fullscreen),
 		transparent: (def ? true : config.window.transparent),
-		toolbar: (def ? true : config.window.toolbar),
 		alwaysOnTop: (def ? false : config.window.alwaysOnTop),
 	});
 
-	if (args[1])
-		mainWindow.loadURL(`file://${__dirname}/index-preview.html`);
-	else
+	if (process.argv[1]) {
+		console.log('process.argv[1]', process.argv[1])
+		// mainWindow.loadFile('./index-preview.html');
+		mainWindow.loadURL(process.argv[1]);
+	}
+	else {
+		console.log(`file://${__dirname}/www/index.html`)
 		mainWindow.loadURL(`file://${__dirname}/www/index.html`);
+	}
 
 	if ((def ? false : config.developer.show_dev_tools))
 		mainWindow.webContents.openDevTools();

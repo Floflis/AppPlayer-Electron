@@ -21,11 +21,9 @@ Even if you don’t use any Action, Condition or Expressions from the plugin, yo
 * Click OK
 
 ## Export
-* Download the precompiled Electron version of your choice [release page](https://github.com/C2Electron/template/releases/).
+* Download the precompiled Electron version of your choice [release page](https://github.com/Floflis/AppPlayer-Electron/releases/).
 * Extract the zip containing the Electron precompiled wherever you want. (Ex: **Electron_Folder**)
-* Select Kongregate (HTML will not work) and export to **Electron_Folder**/ressources/app/www 
-
-**Note : Do NOT minify ! And never delete the node_module folder.**
+* Select HTML and export to **Electron_Folder**/ressources/app/www
 
 * Run your game by launching **Electron_Folder**/electron-prebuilt.exe
 
@@ -35,8 +33,8 @@ If you have any issue please ask [here](https://github.com/C2Electron/template/i
 
 To do a DIY of AppPlayer:
 
-1. clone this git repo;
-2. inside it open the sorcery/terminal/command prompt;
+1. Clone this git repo;
+2. Inside it open the sorcery/terminal/command prompt;
 3. Then type the following 2 commands:
 
 ### 1:

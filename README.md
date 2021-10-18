@@ -1,7 +1,8 @@
 YOU MUST OWN A C2 LICENSE TO USE THIS TOOL. IT IS NOT ALLOWED TO EXPORT GAMES TO DESKTOP WITH THE FREE VERSION.
 
 # Electron for Construct 2
-A prebuilt version of electron ready for Construct 2 games
+
+Preview Construct 2 apps/games in a Electron prebuilt exe - as if Electron were a normal browser!
 
 Latest : [1.9.3](https://github.com/Floflis/AppPlayer-Electron/releases/)
 

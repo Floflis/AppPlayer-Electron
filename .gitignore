@@ -1,3 +1,4 @@
 node_modules
-AppPlayerElectron*ia32
-AppPlayerElectron*x64
+package-lock.json
+AppPlayerElectron*-ia32
+AppPlayerElectron*-x64

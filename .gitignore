@@ -1,2 +1,3 @@
 node_modules
-AppPlayerElectron*
+AppPlayerElectron*ia32
+AppPlayerElectron*x64

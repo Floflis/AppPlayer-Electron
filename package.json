@@ -26,6 +26,6 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "electron": "17.1.0"
+    "electron": "17.1.2"
   }
 }

@@ -20,7 +20,7 @@
   "homepage": "https://github.com/Floflis/AppPlayer-Electron#readme",
   "dependencies": {
     "electron-is-dev": "^2.0.0",
-    "electron-packager": "^15.4.0",
+    "electron-packager": "^17.1.0",
     "fs-extra": "^10.0.1",
     "serve-handler": "^6.1.3"
   },

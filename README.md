@@ -61,4 +61,4 @@ Use **preview on LAN**. Localhost doesn't work.
 
 ## Credits
 
-Originally made by [@Armaldio](https://github.com/Armaldio), became legacy, and then was rescued by [@DaniellMesquita](https://github.com/DaniellMesquita) followed by its original developer, [@Armaldio](https://github.com/Armaldio).
+Originally made by [@Armaldio](https://github.com/Armaldio), became legacy, and then was rescued by [@danimesq](https://github.com/danimesq) followed by its original developer, [@Armaldio](https://github.com/Armaldio).

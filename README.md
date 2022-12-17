@@ -1,8 +1,8 @@
 YOU MUST OWN A C2 LICENSE TO USE THIS TOOL. IT IS NOT ALLOWED TO EXPORT GAMES TO DESKTOP WITH THE FREE VERSION.
 
-# Electron for Construct 2
+# AppPlayer - Electron for Construct 2
 
-<img src="icon.svg">
+<img width="250px" src="icon.svg">
 
 Preview Construct 2 apps/games in a Electron prebuilt exe - as if Electron were a normal browser!
 
